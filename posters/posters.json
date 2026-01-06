@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "file": "2026-02-01_karjaaripaev.png",
+      "caption": "Karjääripäev aatriumis",
+      "expires": "2026-02-01"
+    },
+    {
+      "file": "2026-01-31_olumpiaad.png",
+      "caption": "Olümpiaadide infotund",
+      "expires": "2026-01-31"
+    },
+    {
+      "file": "2026-01-31_1olumpiaad.png",
+      "caption": "Olümpiaadide infotund",
+      "expires": "2026-01-31"
+    },
+    {
+      "file": "2026-01-31_2olumpiaad.png",
+      "caption": "Olümpiaadide infotund",
+      "expires": "2026-01-31"
+    },
+    {
+      "file": "2026-01-31_3olumpiaad.png",
+      "caption": "Olümpiaadide infotund",
+      "expires": "2026-01-31"
+    },
+    {
+      "file": "igapaevane_teade.jpg",
+      "caption": "Püsiinfotahvel (ei aegu)"
+    }
+  ]
+}

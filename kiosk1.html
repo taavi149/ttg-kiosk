@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TTG Kiosk 1</title>
+  <link rel="stylesheet" href="css/kiosk.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="TTG logo" class="logo" />
+      <div class="brand-text">
+        <div class="brand-title">Tallinna Tehnikagümnaasium</div>
+        <div class="brand-sub">Infokiosk 1</div>
+      </div>
+    </div>
+
+    <div class="status">
+      <div id="clock" class="clock">--:--</div>
+      <div id="date" class="date">----</div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <!-- Plokk 1: Sünnipäevad -->
+    <section class="card" aria-label="Tänased sünnipäevalapsed">
+      <h2>Tänased sünnipäevalapsed</h2>
+      <p class="muted">Näidis: Wikimedia “On this day” sünnid (avalik).</p>
+      <ul id="birthdays" class="list">
+        <li>Laen andmeid…</li>
+      </ul>
+      <div id="birthdaysError" class="error hidden"></div>
+    </section>
+
+    <!-- Plokk 2: Nädalaplaan -->
+    <section class="card" aria-label="Nädalaplaanist väljavõtted">
+      <h2>Nädalaplaanist väljavõtted</h2>
+      <p class="muted">Näidis: avalik JSONPlaceholder.</p>
+      <div id="weekPlan" class="week">
+        Laen andmeid…
+      </div>
+      <div id="weekPlanError" class="error hidden"></div>
+    </section>
+
+    <!-- Plokk 3: Reklaamid -->
+    <section class="card poster-card" aria-label="Reklaamid">
+      <h2>Reklaam sündmuste kohta</h2>
+
+      <div class="poster-wrap">
+        <img id="posterImage" class="poster" alt="Sündmuse plakat" />
+        <div id="posterPlaceholder" class="poster-placeholder">
+          Lisa plakatid kausta <code>posters/</code> ja uuenda <code>posters.json</code>.
+        </div>
+      </div>
+
+      <div class="poster-meta">
+        <div class="muted" id="posterCaption"></div>
+        <div class="muted small">Vahetus iga <span id="posterIntervalText">10</span> sek järel</div>
+      </div>
+
+      <div id="postersError" class="error hidden"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="muted">TTG IT • prototüüp</span>
+  </footer>
+
+  <script src="js/kiosk1.js"></script>
+</body>
+</html>
